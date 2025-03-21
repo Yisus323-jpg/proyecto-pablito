@@ -1,0 +1,160 @@
+
+
+
+/* ----- ENCABEZADO ----- */
+
+
+.cont-header {
+    background-color: #24c5ff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.logo1 {
+    font-size: 180%;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ----- TÍTULO ----- */
+.h1-logo2 {
+    font-size: 190%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ----- IMAGEN LOGO ----- */
+.img-logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.img-logo img {
+    width: 100px; /* Ajuste mejorado */
+    max-width: 15%;
+}
+
+/* ----- FORMULARIO ----- */
+.cont-formu {
+    margin-top: 50px;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.cont-formu label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cont-formu input {
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    padding: 5px;
+}
+
+.cont-formu button {
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00a6ff;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cont-formu button:hover {
+    background-color: #007bb5;
+}
+
+/* ----- LISTA ----- */
+.cont-lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos bajen en móviles */
+    list-style: none;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.cont-lista ul {
+    background-color: #24c5ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cont-lista li {
+    background-color: #00a6ff;
+    padding: 10px 15px;
+    font-size: 120%;
+    border-radius: 5px;
+    color: white;
+}
+
+/* ----- TABLA ----- */
+.cont-table {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.cont-table h1, .cont-table p {
+    width: 100%;
+}
+
+/* ----- IMAGEN TERRAZA ----- */
+.img-terraza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid brown;
+}
+
+/* ----- DISEÑO RESPONSIVO ----- */
+@media (max-width: 768px) {
+    .logo1 {
+        font-size: 150%;
+    }
+
+    .h1-logo2 {
+        font-size: 150%;
+    }
+
+    .cont-formu input {
+        width: 90%;
+    }
+
+    .cont-formu button {
+        width: 70%;
+    }
+
+    .cont-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-lista li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cont-table {
+        width: 100%;
+    }
+}
